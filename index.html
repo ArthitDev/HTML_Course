@@ -1,32 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Web Page</title>
+    <link rel="shortcut icon" href="./html_course/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./html_course/main.css">
 </head>
-<body>
-    <h1>Hello Web</h1>
-    <p>
-        Lorem, ipsum dolor sit amet consectetur<b>adipisicing elit</b> <br>adipisicing elit. Nihil assumenda tempora, labore maiores perspiciatis quaerat dolorum consequatur illum asperiores. Iste!
-    </p>
 
-    <ul>
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
-        <li>four</li>
-        <li>five</li>
-    </ul>
-    <ul>
-        <dt>Lorem ipsum dolor sit amet.</dt>
-        <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, esse.</dt>
-    </ul>
-    <a href="https://www.google.co.th/?hl=th" target="_blank">Google</a>
-    <P></P>
-    <a href="mailto:rthit096@gmail.com">Mail</a>
-    <p></p>
-    <a href="tel:0979574687">Tel</a>
+<body>
+    <header>
+        <h1>Hello Web</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#one">One</a>
+            </li>
+            <li>
+                <a href="#two">two</a>
+            </li>
+            <li>
+                <a href="#three">three</a>
+            </li>
+            <li>
+                <a href="#four">four</a>
+            </li>
+        </ul>
+    </nav>
+    <section id = "one">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur <b>adipisicing elit</b> <br>adipisicing elit. Nihil assumenda
+            tempora, labore maiores perspiciatis quaerat dolorum consequatur illum asperiores. Iste!
+        </p>
+    </section>
+    <hr>
+    <section id = "two">
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+        </ul>
+        <ul>
+            <dt>Lorem ipsum dolor sit amet.</dt>
+            <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, esse.</dt>
+        </ul>
+    </section>
+    <hr>
+    <section id = "three">
+        <h2>2 สถานที่ท่องเที่ยว</h2>
+        <ul>
+            <li>
+                <h3>วัดร่องขุ่น</h3>
+                <address>เชียงราย</address>
+                <figure>
+                    <img src="./html_course/image/white_temple.jpg" alt="" srcset="" width="400" height="240"
+                        loading="lazy">
+                    <figcaption>
+                        วิหารขาว
+                    </figcaption>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, cupiditate voluptates.
+                        Distinctio, placeat unde sunt inventore vel sit nulla eos?</p>
+                </figure>
+            </li>
+        </ul>
+        <hr>
+        <ul>
+            <li>
+                <h3>บ้านดำ</h3>
+                <address>เชียงราย</address>
+                <figure>
+                    <img src="./html_course/image/black_house.jpg" alt="" srcset="" width="400" height="240"
+                        loading="lazy">
+                    <figcaption>
+                        บ้านดำ
+                    </figcaption>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dignissimos dolor deleniti
+                        aliquam dolore illo consequuntur doloribus et assumenda a.</p>
+                </figure>
+            </li>
+        </ul>
+    </section>
+    <br>
+    <section id = four>
+        <table>
+            <caption>
+                <b>ตารางกิจกรรม</b>
+            </caption>
+            <thead>
+                <tr>
+                    <th>วัน</th>
+                    <th>เรื่อง</th>
+                    <th>ความยาก</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>วันอังคาร</th>
+                    <td>HTML</td>
+                    <td rowspan ="2">Easy</td>
+                </tr>
+                <tr>
+                    <th>วันพุธ</th>
+                    <td>CSS</td>
+                </tr>
+                <tr>
+                    <th>วันพฤหัสบดี</th>
+                    <td>Java Script</td>
+                    <td rowspan="2">Normal</td>
+                </tr>
+                <tr>
+                    <th>วันศุกร์</th>
+                    <td>Bootstarp</td>
+                </tr>
+                <tr>
+                    <th>วันเสาร์</th>
+                    <td>Finial Project</td>
+                    <td>Hard</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">โอ้วชีทท HTML CSS JavaScript</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <hr>
+    <footer>
+        <tr>
+            <td><a href="https://www.google.co.th/?hl=th" target="_blank">Google</a></td>&nbsp;&nbsp;
+            <td><a href="mailto:rthit096@gmail.com">Mail</a></td>&nbsp;&nbsp;
+            <td><a href="tel:0979574687">Tel</a></td>&nbsp;&nbsp;
+            <td><a href="./html_course/abount.html">Abount Page</a></td>
+            <td><a href="./html_course/contact.html">Contact</a></td>
+        </tr>
+    </footer>
 </body>
+
 </html>
